@@ -17,9 +17,14 @@ function newTrivia() {
     if (currTriviaNum == 25) // No questions left
         popup("You ran out of trivia questions. Reload the page and try again!!")
     
-    if (correctTrivia == 9) // Win
+    if (correctTrivia == 9) { // Win
         popup("You got 9/25 questions correct!! Awesome! (you win btw)")
-
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 1 }
+        });
+    };
     const trivia = shuffledTrivia[currTriviaNum];
     currTriviaNum += 1;
 
@@ -40,6 +45,16 @@ function selectGuess(element) {
     if (element.innerHTML == correctAnswer) {
         correctTrivia += 1;
         element.classList.add('correct');
+
+        // Show confetti (w/ annoying click location workaround)
+        const r = element.getBoundingClientRect();
+        const x = (r.left + r.width / 2) / window.innerWidth;
+        const y = (r.top + r.height / 2) / window.innerHeight;
+        confetti({
+            particleCount: 15,
+            spread: 50,
+            origin: { x, y }
+        });
     } else {
         element.classList.add('incorrect');
     }
@@ -61,4 +76,3 @@ function shuffle(arr) {
   	}
   	return arr;
 }
-
