@@ -1,0 +1,47 @@
+/* Header card */
+header h2 {
+    font-family: 'Sora';
+    font-size: 1.25rem;
+    margin-top: -1rem;
+    font-weight: normal;
+}
+
+/* Hack club */
+header { position: relative; }
+header a img {
+    position: absolute;
+    top: -35px;
+    width: 100px;
+    right: 0;
+    transition: transform 0.1s var(--ease);
+}
+header a:hover img {
+    transform: scale(1.1) rotate(-5deg) translateY(-6px);
+}
+
+/* Button responses */
+button.correct {
+    background-image: var(--green)!important;
+    background-color: var(--green)!important;
+}
+button.incorrect {
+    background-image: var(--red)!important;
+    background-color: var(--red)!important;
+}
+
+/* Grid buttons */
+.guessGrid { display: flex; flex-wrap: wrap; }
+.guessGrid button { flex: 45%; }
+
+/* Info bar at the bottom */
+#info { text-align: center; opacity: 0.6; }
+#info a { color: var(--blue2); }
+
+/* Animations between winning/losing */
+.card {
+    scale: 1;
+    max-height: 300px;
+    opacity: 1;
+    transition: scale .3s var(--ease), opacity .2s var(--ease), height .3s var(--ease);
+}
+.hidden { scale: 0; max-height: 0; opacity: 0; }
