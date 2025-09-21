@@ -18,6 +18,9 @@ header a img {
 header a:hover img {
     transform: scale(1.1) rotate(-5deg) translateY(-6px);
 }
+header a:active img {
+    transform: scale(0.95) rotate(-10deg) translateY(-8px);
+}
 
 /* Button responses */
 button.correct {

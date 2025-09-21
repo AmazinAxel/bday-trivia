@@ -7,18 +7,22 @@ let correctTrivia = 0;
 document.addEventListener("DOMContentLoaded", () => {
     questionElement = document.getElementById('question');
     info = document.getElementById('info');
-    guess = [ document.getElementById('guess1'), document.getElementById('guess2'), document.getElementById('guess3'), document.getElementById('guess4') ];
+    guess = [ document.getElementById('guess1'),
+              document.getElementById('guess2'),
+              document.getElementById('guess3'),
+              document.getElementById('guess4')
+            ];
     
     shuffledTrivia = shuffle(trivia);
-    newTrivia()
+    newTrivia();
 });
 
 function newTrivia() {
     if (currTriviaNum == 25) // No questions left
-        popup("You ran out of trivia questions. Reload the page and try again!!")
+        popup("You ran out of trivia questions. Reload the page and try again!!");
     
     if (correctTrivia == 9) { // Win
-        popup("You got 9/25 questions correct!! Awesome! (you win btw)")
+        popup("You got 9/25 questions correct!! Awesome! (you win btw)");
         confetti({
             particleCount: 100,
             spread: 70,
