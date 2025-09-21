@@ -3,6 +3,7 @@ let questionElement, guess, info, shuffledTrivia, correctAnswer;
 
 let currTriviaNum = 0;
 let correctTrivia = 0;
+
 document.addEventListener("DOMContentLoaded", () => {
     questionElement = document.getElementById('question');
     info = document.getElementById('info');
@@ -31,10 +32,10 @@ function newTrivia() {
         guess[i].innerHTML = shuffledAnswers[i];
     };
 
-
     info.innerHTML = `<strong>25 total questions - get 9 correct</strong> • <em>(questions used: ${currTriviaNum}/25) • (goal: ${correctTrivia}/9)</em><br><a href="//amazinaxel.com">Made by AmazinAxel (Alec) @ Hack Club</a>`;
 }
 
+// Called whenever a button is pressed
 function selectGuess(element) {
     if (element.innerHTML == correctAnswer) {
         correctTrivia += 1;
@@ -45,12 +46,14 @@ function selectGuess(element) {
     setTimeout(newTrivia, 500); // 0.5s
 }
 
+// For winning/losing
 function popup(message) {
     document.getElementById('main').classList.add('hidden'); // Hide trivia
     document.getElementById('popup').classList.remove('hidden'); // Show popup
     document.getElementById('popupHeader').innerHTML = message;
 }
 
+// Fisher-yates shuffle
 function shuffle(arr) {
   	for (let i = arr.length - 1; i > 0; i--) {
     	const j = Math.floor(Math.random() * (i + 1));
