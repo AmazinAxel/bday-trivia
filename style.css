@@ -6,7 +6,7 @@ header h2 {
     font-weight: normal;
 }
 
-/* Hack club */
+/* Hack club image link */
 header { position: relative; }
 header a img {
     position: absolute;
@@ -22,7 +22,7 @@ header a:active img {
     transform: scale(0.95) rotate(-10deg) translateY(-8px);
 }
 
-/* Button responses */
+/* Trivia button responses */
 button.correct {
     background-image: var(--green)!important;
     background-color: var(--green)!important;
@@ -32,15 +32,15 @@ button.incorrect {
     background-color: var(--red)!important;
 }
 
-/* Grid buttons */
+/* Trivia grid buttons */
 .guessGrid { display: flex; flex-wrap: wrap; }
 .guessGrid button { flex: 45%; }
 
-/* Info bar at the bottom */
+/* Bottom page info */
 #info { text-align: center; opacity: 0.6; }
 #info a { color: var(--blue2); }
 
-/* Animations between winning/losing */
+/* Animations between winning/losing cards */
 .card {
     scale: 1;
     max-height: 300px;

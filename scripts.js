@@ -52,8 +52,8 @@ function selectGuess(element) {
 
         // Show confetti (w/ annoying click location workaround)
         const r = element.getBoundingClientRect();
-        const x = (r.left + r.width / 2) / window.innerWidth;
-        const y = (r.top + r.height / 2) / window.innerHeight;
+        const x = ((r.left + r.width / 2) / window.innerWidth);
+        const y = ((r.top + r.height / 2) / window.innerHeight);
         confetti({
             particleCount: 15,
             spread: 50,
@@ -72,7 +72,7 @@ function popup(message) {
     document.getElementById('popupHeader').innerHTML = message;
 }
 
-// Fisher-yates shuffle
+// Fisher-yates better random shuffle
 function shuffle(arr) {
   	for (let i = arr.length - 1; i > 0; i--) {
     	const j = Math.floor(Math.random() * (i + 1));
