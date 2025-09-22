@@ -4,7 +4,7 @@ const trivia = [
     answers: ["Battle of Stamford Bridge", "Battle of Hastings", "Battle of Norman", "The Battle for England"]
   },
   { // 2
-    question: "Which Revolutinary War hero was captured on this day?",
+    question: "Which Revolutionary War hero was captured on this day?",
     answers: ["Ethan Allen", "Thomas Jefferson", "George Washington", "Franklin D. Roosevelt"]
   },
   { // 3
@@ -20,11 +20,11 @@ const trivia = [
     answers: ["12th", "11th", "10th", "13th"]
   },
   { // 6
-    question: "Which two countries sign a disarment treaty on this date in 1340?",
-    answers: ["England and France", "England and Ireland", "England and the United States", "Mexico and the United States"]
+    question: "What was the country of origin of the 2005 F1 World Champion Fernando Alonso?",
+    answers: ["Spain", "Mexico", "The United States", "Brazil"]
   },
   { // 7
-    question: "In 1513 which ocean did the Spaish explorer Vasco Núñez de Balboa explore on this date?",
+    question: "In 1513 which ocean did the Spanish explorer Vasco Núñez de Balboa explore on this date?",
     answers: ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"]
   },
   { // 8
@@ -36,7 +36,7 @@ const trivia = [
     answers: ["England and Denmark", "England and Ireland", "England and France", "The United States and England"]
   },
   { // 10
-    question: "Which two countries sign a disarment treaty on this date in 1340?",
+    question: "Which two countries signed a disarment treaty on this date in 1340?",
     answers: ["England and France", "England and Ireland", "England and the United States", "Mexico and the United States"]
   },
   { // 12
@@ -44,7 +44,7 @@ const trivia = [
     answers: ["On Simon Bolívar", "On George Washington", "On John Quincy Adams", "On Andrew Jackson"]
   },
   { // 13
-    question: "Where was the first cricket match hosted on this date in 1844?",
+    question: "Where was the first Cricket match hosted on this date in 1844?",
     answers: ["In New York", "In England", "In Toronto", "In California"]
   },
   { // 14
@@ -56,7 +56,7 @@ const trivia = [
     answers: ["Billy the Kid", "Jack the Ripper", "Jesse James", "John Wilkes Booth"]
   },
   { // 16
-    question: "Which national park is established on this date in 1890 by Benjamin Harrison?",
+    question: "Which National Park is established on this date in 1890 by Benjamin Harrison?",
     answers: ["Seqoia National Park", "Yellowstone National Park", "North Cascades National Park", "Olympic National Park"]
   },
   { // 17
