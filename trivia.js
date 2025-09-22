@@ -64,8 +64,8 @@ const trivia = [
     answers: ["1897", "1880", "1901", "1924"]
   },
   { // 18
-    question: "Which two countries sign a disarment treaty on this date in 1340?",
-    answers: ["England and France", "England and Ireland", "England and the United States", "Mexico and the United States"]
+    question: "Which 1st female Supreme Court Justice was sworn in on this day in 1981?",
+    answers: ["Sandra Day O'Connor", "Ruth Bader Ginsburg", "Sonia Sotomayor", "Ketanji Brown Jackson"]
   },
   { // 19
     question: "Which President suffers a breakdown on this date in 1919?",
@@ -94,9 +94,5 @@ const trivia = [
   { // 25
     question: "Which major nuclear test occured on this date in 1974?",
     answers: ["Nevada Test Site in the US", "Arizona Test Site in the US", "Kamchatka Oblast in the USSR", "Moscow Oblast in the USSR"]
-  },
-  { // 26 (extra)
-    question: "Which 1st female Supreme Court Justice was sworn in on this day in 1981?",
-    answers: ["Sandra Day O'Connor", "Ruth Bader Ginsburg", "Sonia Sotomayor", "Ketanji Brown Jackson"]
   }
 ];
