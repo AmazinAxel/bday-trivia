@@ -11,6 +11,17 @@
         <link rel="stylesheet" href="https://amazinaxel.com/css/other.css"/>
         <link rel="stylesheet" href="https://amazinaxel.com/css/options.css"/>
         <link rel="stylesheet" href="https://amazinaxel.com/css/vars.css"/>
+        <style>
+            .flex {
+                display: flex;
+                gap: 1rem;
+            }
+            .flex a {
+                color: var(--blue2);
+                text-decoration: none;
+                width: 100%
+            }
+        </style>
 	</head>
     <div id="content">
         <header class="card info">
@@ -20,8 +31,10 @@
         </header>
 
         <body>
-            <a href=""><h1 id="question">Trivia</h1></a>
-            <a href=""><h1 id="question">Guess the year</h1></a>
+            <div class="flex">
+                <a href="trivia.html" class="card"><h1 id="question">Trivia</h1></a>
+                <a href="guessyear.html" class="card"><h1 id="question">Guess the year</h1></a>
+            </div>
         </body>
     </div>
 </html>

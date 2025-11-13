@@ -3,6 +3,7 @@ let questionElement, guess, info, shuffledTrivia, correctAnswer;
 
 let currTriviaNum = 0;
 let correctTrivia = 0;
+let timeout = false;
 
 document.addEventListener("DOMContentLoaded", () => {
     questionElement = document.getElementById('question');
@@ -42,27 +43,31 @@ function newTrivia() {
     };
 
     info.innerHTML = `<strong>25 total questions - get 9 correct</strong> • <em>(questions used: ${currTriviaNum}/25) • (goal: ${correctTrivia}/9)</em><br><a href="//amazinaxel.com">Made by AmazinAxel (Alec) @ Hack Club</a>`;
+    timeout = false;
 }
 
 // Called whenever a button is pressed
 function selectGuess(element) {
-    if (element.innerHTML == correctAnswer) {
-        correctTrivia += 1;
-        element.classList.add('correct');
+    if (!timeout) {
+        timeout = true
+        if (element.innerHTML == correctAnswer) {
+            correctTrivia += 1;
+            element.classList.add('correct');
 
-        // Show confetti (w/ annoying click location workaround)
-        const r = element.getBoundingClientRect();
-        const x = ((r.left + r.width / 2) / window.innerWidth);
-        const y = ((r.top + r.height / 2) / window.innerHeight);
-        confetti({
-            particleCount: 15,
-            spread: 50,
-            origin: { x, y }
-        });
-    } else {
-        element.classList.add('incorrect');
-    }
-    setTimeout(newTrivia, 500); // 0.5s
+            // Show confetti (w/ annoying click location workaround)
+            const r = element.getBoundingClientRect();
+            const x = ((r.left + r.width / 2) / window.innerWidth);
+            const y = ((r.top + r.height / 2) / window.innerHeight);
+            confetti({
+                particleCount: 15,
+                spread: 50,
+                origin: { x, y }
+            });
+        } else {
+            element.classList.add('incorrect');
+        }
+        setTimeout(newTrivia, 500); // 0.5s
+    };
 }
 
 // For winning/losing
