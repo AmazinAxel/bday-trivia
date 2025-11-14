@@ -8,17 +8,22 @@ let timeout = false;
 document.addEventListener("DOMContentLoaded", () => {
     questionElement = document.getElementById('question');
     info = document.getElementById('info');
+    guess = [ document.getElementById('guess1'),
+              document.getElementById('guess2'),
+              document.getElementById('guess3'),
+              document.getElementById('guess4')
+            ];
     
     shuffledTrivia = shuffle(trivia);
     newTrivia();
 });
 
 function newTrivia() {
-    if (currTriviaNum == 13) // No questions left
+    if (currTriviaNum == 24) // No questions left
         popup("You ran out of trivia questions. Reload the page and try again!!");
     
     if (correctTrivia == 9) { // Win
-        popup("You got 9 out of 13 questions correct!! (you win btw)");
+        popup("You got 9/25 questions correct!! Awesome! (you win btw)");
         confetti({
             particleCount: 100,
             spread: 70,
@@ -26,15 +31,19 @@ function newTrivia() {
         });
     };
     const trivia = shuffledTrivia[currTriviaNum];
+    
     currTriviaNum += 1;
 
-    correctAnswer = trivia.answer;
+    correctAnswer = trivia.answers[0];
     questionElement.innerHTML = trivia.question;
+    
+    shuffledAnswers = shuffle(trivia.answers)
+    for (let i = 0; i <= 3; i++) {
+        guess[i].className = '';
+        guess[i].innerHTML = shuffledAnswers[i];
+    };
 
-    document.getElementById('before').className = '';
-    document.getElementById('after').className = '';
-
-    info.innerHTML = `<strong>13 total questions - get 9 correct</strong> • <em>(questions used: ${currTriviaNum}/13) • (goal: ${correctTrivia}/9)</em><br><a href="//amazinaxel.com">Made by AmazinAxel (Alec) @ Hack Club</a>`;
+    info.innerHTML = `<strong>25 total questions - get 9 correct</strong> • <em>(questions used: ${currTriviaNum}/25) • (goal: ${correctTrivia}/9)</em><br><a href="//amazinaxel.com">Made by AmazinAxel (Alec) @ Hack Club</a>`;
     timeout = false;
 };
 

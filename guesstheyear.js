@@ -1,55 +1,102 @@
-
 const trivia = [
   { // 1
-    question: "Was the original iPhone released before this day in 2007?",
-    answer: 'Before'
+    question: "Which year was the first printing press set up in Cambridge on this date?",
+    answers: ["1639", "1529", "1765", "1694"]
   },
-  { // 2e
-    question: "Was the Netflix streaming service launched before this day in 2007?",
-    answer: 'Before'
+  { // 2
+    question: "What year did the first British bus service begin on this date?",
+    answers: ["1897", "1880", "1901", "1924"]
   },
   { // 3
-    question: "Was the original Amazon Kindle released before this day in 2007?",
-    answer: 'After'
+    question: "What year on this date was the international slavery convention signed by 20 states?",
+    answers: ["1920", "1925", "1926", "1896"]
   },
   { // 4
-    question: "Was Google Street View released before this day in 2007?",
-    answer: 'Before'
+    question: "What year did Billy Graham begin his LA Crusade on this date?",
+    answers: ["1947", "1949", "1951", "1943"]
   },
   { // 5
-    question: "Was Spongebob started before this day in 2007?",
-    answer: 'Before'
+    question: "When did the Battle of Stamford Bridge take place?",
+    answers: ["1066", "982", "1200", "898"]
   },
   { // 6
-    question: "Did Johnny Test air before this day in 2007?",
-    answer: 'Before'
+    question: "When was the US Bill of Rights passed on this date?",
+    answers: ["1789", "1790", "1791", "1792"]
   },
   { // 7
-    question: "Was the Phineas and Ferb pilot released before this day in 2007?",
-    answer: 'Before'
+    question: "When was the Twelth Amendment to the Constitution made on this date?",
+    answers: ["1804", "1797", "1807", "1811"]
   },
   { // 8
-    question: "Was Adventure Time released before this day in 2007?",
-    answer: 'After'
+    question: "When was Sequoia National Park established on this date?",
+    answers: ["1890", "1878", "1860", "1934"]
   },
   { // 9
-    question: "Did the Penguins of Madagascar air before this day in 2007?",
-    answer: 'After'
+    question: "When did the groundbreaking ceremony begin for Fenway Park in Boston on this date?",
+    answers: ["1911", "1960", "1980", "1999"]
   },
   { // 10
-    question: "Did Avatar: the Last Airbender air before this day in 2007?",
-    answer: 'Before' 
+    question: "When did President Woodrow Wilson suffer a breakdown on this date in Pueblo, Colorado?",
+    answers: ["1919", "1923", "1918", ""]
   },
   { // 11
-    question: "Did Facebook launch before this day in 2007?",
-    answer: 'Before' 
+    question: "",
+    answers: ["", "", "", ""]
   },
   { // 12
-    question: "Was Bitcoin created before this day in 2007?",
-    answer: 'After'
+    question: "",
+    answers: ["", "", "", ""]
   },
   { // 13
-    question: "Was Twitter launched before this day in 2007?",
-    answer: 'Before' 
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 14
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 15
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 16
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 17
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 18
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 19
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 20
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 21
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 22
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 23
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 24
+    question: "",
+    answers: ["", "", "", ""]
+  },
+  { // 25
+    question: "",
+    answers: ["", "", "", ""]
   }
 ];

@@ -28,8 +28,8 @@ const trivia = [
     answers: ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"]
   },
   { // 8
-    question: "Which year was the first printing press set up in Cambridge on this date?",
-    answers: ["1639", "1529", "1765", "1694"]
+    question: "Which college set up the first printing press in Cambridge?",
+    answers: ["Harvard", "MIT", "Tufts University", "Columbia University"]
   },
   { // 9
     question: "Which two countries sign a trade agreement on this date in 1654?",
@@ -60,8 +60,8 @@ const trivia = [
     answers: ["Seqoia National Park", "Yellowstone National Park", "North Cascades National Park", "Olympic National Park"]
   },
   { // 17
-    question: "What year did the first British bus service begin on this date?",
-    answers: ["1897", "1880", "1901", "1924"]
+    question: "Where did the first British bus service start?",
+    answers: ["England", "Wales", "Northern Ireland", "Scotland"]
   },
   { // 18
     question: "Which 1st female Supreme Court Justice was sworn in on this day in 1981?",
@@ -72,7 +72,7 @@ const trivia = [
     answers: ["Woodrow Wilson", "Franklin D. Roosevelt", "William Howard Taft", "Warren G. Harding"]
   },
   { // 20
-    question: "What was the world auto speed record set by Malcolm Campbell on this date in 1924?",
+    question: "What was the world auto speed record set by Malcolm Cameapbell on this date in 1924?",
     answers: ["146.16mph", "120.15mph", "100.12mph", "90.37mph"]
   },
   { // 21
@@ -80,12 +80,12 @@ const trivia = [
     answers: ["Ford Motor Company", "US Steel", "Standard Oil", "DuPont"]
   },
   { // 22
-    question: "What year on this date was the international slavery convention signed by 20 states?",
-    answers: ["1920", "1925", "1926", "1896"]
+    question: "What happened with the Soviet Seven-Year plan on this date?",
+    answers: ["Announced, not in effect", "Drafted", "Went into effect", "Announced & went into effect immediately"]
   },
   { // 23
-    question: "What year did Billy Graham begin his LA Crusade on this date?",
-    answers: ["1947", "1949", "1951", "1943"]
+    question: "In which city did did Billy Graham start his famous crusade on this date?",
+    answers: ["Los Angeles", "Seattle", "New York", "Vancouver"]
   },
   { // 24
     question: "Which nuclear test occured on this date in 1962?",
