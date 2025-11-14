@@ -17,10 +17,13 @@
                 gap: 1rem;
             }
             .flex a {
-                color: var(--blue2);
+                color: var(--lightest3);
                 text-decoration: none;
-                width: 100%
+                width: 100%;
             }
+            .flex a:hover { scale: 1.03; }
+            .flex a:active  { scale: 0.98; }
+            h3 { font-weight: normal; margin: 2rem; }
         </style>
 	</head>
     <div id="content">
@@ -32,9 +35,10 @@
 
         <body>
             <div class="flex">
-                <a href="trivia.html" class="card"><h1 id="question">Trivia</h1></a>
-                <a href="guessyear.html" class="card"><h1 id="question">Guess the year</h1></a>
+                <a href="trivia.html" class="card important"><h1 id="question">Trivia</h1></a>
+                <a href="guessyear.html" class="card important"><h1 id="question">Guess the year</h1></a>
             </div>
+            <div class="card"><h2>New update!</h2><h3>Use the new buttons above to select which game you'd like to play. This update adds Guess the Year, a new game where you guess whether the event happened before or after September 25th. Enjoy!</h3></div>
         </body>
     </div>
 </html>

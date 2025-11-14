@@ -8,11 +8,7 @@ let timeout = false;
 document.addEventListener("DOMContentLoaded", () => {
     questionElement = document.getElementById('question');
     info = document.getElementById('info');
-    guess = [ document.getElementById('guess1'),
-              document.getElementById('guess2'),
-              document.getElementById('guess3'),
-              document.getElementById('guess4')
-            ];
+    guess = [ document.getElementById('guess1'), document.getElementById('guess2')];
     
     shuffledTrivia = shuffle(trivia);
     newTrivia();

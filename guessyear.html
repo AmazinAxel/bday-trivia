@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<head>
+        <title>Birthday trivia</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="color-scheme" content="dark"/>
+		
+        <!-- Page styling -->
+        <link rel="stylesheet" href="/style.css"/>
+        <link rel="stylesheet" href="https://amazinaxel.com/css/layout.css"/>
+        <link rel="stylesheet" href="https://amazinaxel.com/css/other.css"/>
+        <link rel="stylesheet" href="https://amazinaxel.com/css/options.css"/>
+        <link rel="stylesheet" href="https://amazinaxel.com/css/vars.css"/>
+
+        <!-- Actual code -->
+        <script src="/guessyearcode.js"></script>
+		<script src="/guessyear.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+	</head>
+    
+    <div id="content">
+        <a href="/" class="showMoreBtn otherWay">More games</a>
+        <header class="card info">
+            <a href="//birthday-cards.hackclub.com"><img src="/hackclub-flag.svg" class="noImgStyle"></a>
+            <h1>Bday Guess the Year</h1>
+            <h2>Did this happen before or after <strong>September 25th?</strong></h2>
+        </header>
+
+        <body>
+            <div id="main" class="card">
+                <h1 id="question"></h1>
+
+                <div class="guessGrid">
+                    <button id="before" onclick="selectGuess(this)">Before</button>
+                    <button id="after" onclick="selectGuess(this)">After</button>
+                </div>
+            </div>
+
+            <div id="popup" class="hidden card">
+                <h1 id="popupHeader"></h1>
+            </div>
+
+            <p id="info"></p>
+        </body>
+    </div>
+</html>
