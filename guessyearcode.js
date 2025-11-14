@@ -8,18 +8,17 @@ let timeout = false;
 document.addEventListener("DOMContentLoaded", () => {
     questionElement = document.getElementById('question');
     info = document.getElementById('info');
-    guess = [ document.getElementById('guess1'), document.getElementById('guess2')];
     
     shuffledTrivia = shuffle(trivia);
     newTrivia();
 });
 
 function newTrivia() {
-    if (currTriviaNum == 25) // No questions left
+    if (currTriviaNum == 13) // No questions left
         popup("You ran out of trivia questions. Reload the page and try again!!");
     
     if (correctTrivia == 9) { // Win
-        popup("You got 9/25 questions correct!! Awesome! (you win btw)");
+        popup("You got 9 out of 13 questions correct!! (you win btw)");
         confetti({
             particleCount: 100,
             spread: 70,
@@ -29,16 +28,13 @@ function newTrivia() {
     const trivia = shuffledTrivia[currTriviaNum];
     currTriviaNum += 1;
 
-    correctAnswer = trivia.answers[0];
+    correctAnswer = trivia.answer;
     questionElement.innerHTML = trivia.question;
-    
-    shuffledAnswers = shuffle(trivia.answers)
-    for (let i = 0; i <= 3; i++) {
-        guess[i].className = '';
-        guess[i].innerHTML = shuffledAnswers[i];
-    };
 
-    info.innerHTML = `<strong>25 total questions - get 9 correct</strong> • <em>(questions used: ${currTriviaNum}/25) • (goal: ${correctTrivia}/9)</em><br><a href="//amazinaxel.com">Made by AmazinAxel (Alec) @ Hack Club</a>`;
+    document.getElementById('before').className = '';
+    document.getElementById('after').className = '';
+
+    info.innerHTML = `<strong>13 total questions - get 9 correct</strong> • <em>(questions used: ${currTriviaNum}/13) • (goal: ${correctTrivia}/9)</em><br><a href="//amazinaxel.com">Made by AmazinAxel (Alec) @ Hack Club</a>`;
     timeout = false;
 }
 
@@ -71,13 +67,13 @@ function popup(message) {
     document.getElementById('main').classList.add('hidden'); // Hide trivia
     document.getElementById('popup').classList.remove('hidden'); // Show popup
     document.getElementById('popupHeader').innerHTML = message;
-}
+};
 
 // Fisher-yates better random shuffle
 function shuffle(arr) {
   	for (let i = arr.length - 1; i > 0; i--) {
     	const j = Math.floor(Math.random() * (i + 1));
     	[arr[i], arr[j]] = [arr[j], arr[i]];
-  	}
+  	};
   	return arr;
 }
