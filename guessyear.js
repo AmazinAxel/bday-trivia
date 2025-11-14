@@ -4,7 +4,7 @@ const trivia = [
     question: "Was the original iPhone released before this day in 2007?",
     answer: 'Before'
   },
-  { // 2
+  { // 2e
     question: "Was the Netflix streaming service launched before this day in 2007?",
     answer: 'Before'
   },
@@ -29,7 +29,7 @@ const trivia = [
     answer: 'Before'
   },
   { // 8
-    question: "Did Adventure Time air before this day in 2007?",
+    question: "Was Adventure Time released before this day in 2007?",
     answer: 'After'
   },
   { // 9

@@ -36,7 +36,7 @@ function newTrivia() {
 
     info.innerHTML = `<strong>13 total questions - get 9 correct</strong> • <em>(questions used: ${currTriviaNum}/13) • (goal: ${correctTrivia}/9)</em><br><a href="//amazinaxel.com">Made by AmazinAxel (Alec) @ Hack Club</a>`;
     timeout = false;
-}
+};
 
 // Called whenever a button is pressed
 function selectGuess(element) {
@@ -57,10 +57,10 @@ function selectGuess(element) {
             });
         } else {
             element.classList.add('incorrect');
-        }
+        };
         setTimeout(newTrivia, 500); // 0.5s
     };
-}
+};
 
 // For winning/losing
 function popup(message) {
@@ -76,4 +76,4 @@ function shuffle(arr) {
     	[arr[i], arr[j]] = [arr[j], arr[i]];
   	};
   	return arr;
-}
+};
