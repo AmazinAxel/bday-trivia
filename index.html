@@ -12,14 +12,14 @@
         <link rel="stylesheet" href="https://amazinaxel.com/css/options.css"/>
         <link rel="stylesheet" href="https://amazinaxel.com/css/vars.css"/>
         <style>
-            .flex { display: flex; gap: 1rem; }
-            .flex a {
+            .guessGrid a {
                 color: var(--lightest3);
                 text-decoration: none;
-                width: 100%;
+                flex: 33%;
+                margin: 1rem;
             }
-            .flex a:hover { scale: 1.03; }
-            .flex a:active  { scale: 0.98; }
+            .guessGrid a:hover { scale: 1.03; }
+            .guessGrid a:active  { scale: 0.98; }
             h3 { font-weight: normal; margin: 2rem; }
         </style>
 	</head>
@@ -31,9 +31,10 @@
         </header>
 
         <body>
-            <div class="flex">
-                <a href="trivia.html" class="card important"><h1 id="question">Trivia</h1></a>
-                <a href="guessyear.html" class="card important"><h1 id="question">Guess the year</h1></a>
+            <div class="guessGrid">
+                <a href="guessyear.html" class="card important"><h1 id="question">Guess the Year</h1></a>
+                <a href="beforeorafter.html" class="card important"><h1 id="question">Before or After</h1></a>
+                <a href="trivia.html" class="card important"><h1 id="question">Birthday Trivia</h1></a>
             </div>
             <div class="card"><h2>New update!</h2><h3>Use the new buttons above to select which game you'd like to play. This update adds Guess the Year, a new game where you guess whether the event happened before or after September 25th. Enjoy!</h3></div>
         </body>
