@@ -37,66 +37,66 @@ const trivia = [
   },
   { // 10
     question: "When did President Woodrow Wilson suffer a breakdown on this date in Pueblo, Colorado?",
-    answers: ["1919", "1923", "1918", ""]
+    answers: ["1919", "1923", "1918", "1914"]
   },
   { // 11
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When was the 40 hour workweek announced by Henry Ford on this date?",
+    answers: ["1926", "1910", "1899", "1860"]
   },
   { // 12
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When was the Royal Jordanian Air Force founded on this date?",
+    answers: ["1955", "2005", "1902", "1924"]
   },
   { // 13
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When was the Soviet Seven-Year Plan announced on this date?",
+    answers: ["1957", "1969", "1979", "1989"]
   },
   { // 14
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When was Sandra Day O'Connor (1st female Supreme Court Justice) sworn in on this date?",
+    answers: ["1981", "1979", "1999", "2001"]
   },
   { // 15
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When did Egypt & Jordan regain diplomatic relations on this date?",
+    answers: ["1984", "1950", "1999", "1945"]
   },
   { // 16
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When did General Sitiveni Rabuka stage a Fiji coup on this date?",
+    answers: ["1987", "2010", "2005", "2000"]
   },
   { // 17
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When did the UN Security Council vote to impose an air embargo on Iraq on this date?",
+    answers: ["1990", "1988", "2000", "1980"]
   },
   { // 18
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When did Young Sheldon begin premering?",
+    answers: ["2017", "2014", "2010", "2020"]
   },
   { // 19
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When was French President Nicolas Sarkozy sentenced to prison on this date?",
+    answers: ["2025", "2007", "1985", "1978"]
   },
   { // 20
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When did the Singapore announce its facial verification on this date, the first in the world?",
+    answers: ["2020", "2018", "2016", "2023"]
   },
   { // 21
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When did Beijing's Daxing International Airport open on this date?",
+    answers: ["2019", "2024", "2022", "2015"]
   },
   { // 22
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When did two Instagram Co-founders resign from Instagram/Facebook on this date?",
+    answers: ["2018", "2015", "2013", "2011"]
   },
   { // 23
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When did the Celtic Tiger (Ireland's extreme period of economic growth) first fall into recession?",
+    answers: ["2008", "2009", "1989", "1990"]
   },
   { // 24
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When did the Japense Tokachi-Oki earthquake take place on this date?",
+    answers: ["2003", "2020", "2024", "2010"]
   },
   { // 25
-    question: "",
-    answers: ["", "", "", ""]
+    question: "When did Paramount @ Madison Square Garden in NYC open on this date?",
+    answers: ["1991", "1989", "2015", "2020"]
   }
 ];
